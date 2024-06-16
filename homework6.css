@@ -1,0 +1,366 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900; 1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=takas');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+/* body{
+    background: #eaeaea;
+    overflow: hidden;
+} */
+
+
+header{
+width: 100%;
+    height: 400px;
+    background-image:linear-gradient(to right, rgba(243, 228, 228,0.3),rgba(20, 8, 8,0.7)), url(./exotics-hero-v2.avif);
+background-position: center left;
+}
+
+
+.inner{
+    padding: 4rem;
+
+}
+
+h2{
+    display:flex;
+ justify-content:center;
+    align-items: center;
+    margin: 2px;
+    margin-left: 50px;
+    
+    padding: 1rem;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: aquamarine;
+}
+
+ul{
+    list-style-type: "🚗";
+    list-style-position: inside;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+
+ul li{
+    background-color: grey;
+    margin: 10px ;
+    padding: 5px;
+    border-left: 2px solid black;
+
+    border-radius: 0.6rem;
+
+
+}
+ul li:hover{
+    transform:scale(1.8);
+    y-index:1;
+    background-color: rgba(155, 240, 211, 0.5);
+}
+input{
+    width: 150px;
+    height: 30px;
+    background-color: azure;
+    border:none;
+    margin: 2px;
+}
+
+#ara{
+    display: flex;
+justify-content: center;
+align-items: center;
+  margin:10px;
+  margin-left: 250px;
+  border: 2px solid rgb(17, 16, 16);
+
+}
+input:focus{
+
+    color: aqua;
+   background-color: rgb(219, 203, 235);
+}
+
+.sos{
+    display:inline-flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* background-color: rgb(190, 207, 209); */
+}
+
+.sos .icon{
+    margin: 0 20px;
+  display: flex; 
+align-items: center; 
+justify-content: center;
+flex-direction: column;
+position: relative;
+z-index: 2;
+ cursor: pointer;
+ transition: all 0.4s cubic-bezier(0.68,-0.55,0,265,1.55);
+
+
+
+}
+
+.sos .icon span{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 50%;
+    z-index: 2;
+    text-align: center;
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+   
+}
+.sos .icon:hover span i{
+    color: #fff;
+
+}
+
+.sos .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+
+}
+
+.sos .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color:#fff;
+    font-size: 15px;
+    padding: 10px 18px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0,265,1.55);
+}
+span{
+ margin-left: 25px;
+}
+
+
+.sos .icon .tooltip:before{
+    position: absolute;
+    content:"";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0,265,1.55);
+
+}
+
+.sos .icon:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top: 0px;
+}
+
+.sos .icon:hover span,
+.sos .icon:hover .toooltip{
+    text-shadow:0px -1px 0px rgba(0,0,0,0.4);
+}
+
+.sos .facebook:hover span,
+.sos .facebook:hover .tooltip,
+.sos .facebook:hover .tooltip:before{
+    background: #3B5999;
+}
+
+.sos .twitter:hover span,
+.sos .twitter:hover .tooltip,
+.sos .twitter:hover .tooltip:before{
+    background: #46C1F6;
+}
+
+.sos .instagram:hover span,
+.sos .instagram:hover .tooltip,
+.sos .instagram:hover .tooltip:before{
+    background: #e1306c;
+}
+
+.sos .github:hover span,
+.sos .github:hover .tooltip,
+.sos .github:hover .tooltip:before{
+    background: #333;
+}
+
+.sos .youtube:hover span,
+.sos .youtube:hover .tooltip,
+.sos .youtube:hover .tooltip:before{
+    background: #DE463B;
+}
+
+.sos .icon .tooltip{
+    font-size: 9px;
+
+}
+
+span{
+    top: 40px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+.end{
+    position: absolute;
+    top:  79%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1488px;
+    height: 50%;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.end .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    left: 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+
+
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #0cd538;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
